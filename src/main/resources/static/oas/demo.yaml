@@ -1,0 +1,46 @@
+openapi: 3.0.2
+info:
+  title: demo
+  description: demo API
+  license:
+    name: private
+  version: 0.0.1
+servers:
+  - url: /demo
+paths:
+  /hello:
+    get:
+      summary: say hello
+      responses:
+        200:
+          description: hello -> world
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  hello:
+                    type: string
+                required: [hello]
+    post:
+      summary: say hello
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                hello:
+                  type: string
+              required: [hello]
+      responses:
+        200:
+          description: hello -> world
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  hello:
+                    type: string
+                required: [hello]

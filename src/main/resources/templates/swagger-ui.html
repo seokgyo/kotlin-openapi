@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>Swagger UI</title>
+</head>
+<body>
+    <!--/*@thymesVar id="oas" type="java.lang.String"*/-->
+    <div id="root" th:data-url="${oas}"></div>
+    <script src="/built/swagger-ui.bundle.js"></script>
+</body>
+</html>
